@@ -1,0 +1,6 @@
+return {
+    {	
+	 "sainnhe/everforest",
+	 opts = {}
+    }
+}

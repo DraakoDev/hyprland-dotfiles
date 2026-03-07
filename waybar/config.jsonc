@@ -1,0 +1,132 @@
+// -*- mode: jsonc -*-
+{
+    "position": "right",
+    //"output": "eDP-1",
+    "margin-top": 6,
+    "margin-right": 6,
+    "margin-bottom": 6,
+    "width": 40,
+    "modules-left": [
+        "custom/launcher",
+        "custom/separator",
+        "hyprland/workspaces",
+        "tray",
+        "custom/spacer"
+    ],
+    "modules-center": [
+        "hyprland/window"
+    ],
+    "modules-right": [
+        "custom/spacer2",
+        "pulseaudio",
+        "network",
+        "battery",
+        "clock",
+        "custom/separator",
+        "custom/notification"
+    ],
+    "custom/separator": {
+        "format": ""
+    },
+    "custom/launcher": {
+        "format": "󰣇",
+        "on-click": "rofi -show drun -theme ~/.config/rofi/launchers/type-2/style-1"
+    },
+    "tray": {
+        "icon-size": 21,
+        "spacing": 10
+    },
+    "hyprland/window": {
+        "format": "{initialTitle}",
+        "max-length": 20,
+        "rotate": 270
+    },
+    "clock": {
+        "format": "{:%I\n%M}",
+        "tooltip": false
+    },
+    "battery": {
+        "states": {
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{icon}",
+        "format-full": "{icon}",
+        "format-charging": "󰂄",
+        "tooltip-format": "{capacity}%{time}",
+        "format-icons": [
+            "󰁺",
+            "󰁻",
+            "󰁼",
+            "󰁽",
+            "󰁾",
+            "󰁿",
+            "󰂀",
+            "󰂁",
+            "󰂂",
+            "󰁹"
+        ]
+    },
+    "pulseaudio": {
+        "format": "{icon}",
+        "format-bluetooth": "",
+        "tooltip-format": "{volume}% {icon}",
+        "format-bluetooth-muted": "",
+        "format-muted": "",
+        "format-icons": {
+            "headphone": "",
+            "default": [
+                "",
+                "",
+                ""
+            ]
+        }
+    },
+    "network": {
+        "format": "{ifname}",
+        "format-wifi": "{icon}",
+        "format-ethernet": "󰈀",
+        "format-disconnected": "󰇨",
+        "format-icons": [
+            "󰤯",
+            "󰤟",
+            "󰤢",
+            "󰤥",
+            "󰤨"
+        ],
+        "tooltip-format-wifi": "{essid} ({signalStrength}%) {icon}",
+        "tooltip-format-ethernet": "{ipaddr}/{cidr} 󰈀",
+        "tooltip-format-disconnected": "Disconnected",
+        "max-length": 50
+    },
+    "custom/notification": {
+        "tooltip": true,
+        "format": "{icon}",
+        "format-icons": {
+            "notification": "󱅫",
+            "none": "",
+            "dnd-notification": "󰂠",
+            "dnd-none": "󰪓",
+            "inhibited-notification": "󰂛",
+            "inhibited-none": "󰪑",
+            "dnd-inhibited-notification": "󰂛",
+            "dnd-inhibited-none": "󰪑"
+        },
+        "return-type": "json",
+        "exec-if": "which swaync-client",
+        "exec": "swaync-client -swb",
+        "on-click": "swaync-client -t -sw",
+        "on-click-right": "swaync-client -d -sw",
+        "escape": true
+    },
+    "custom/spacer": {
+        "format": "",
+        "tooltip": false,
+        "rotate": 90
+    },
+    "custom/spacer2": {
+        "format": "",
+        "tooltip": false,
+        "rotate": 270
+    }
+}

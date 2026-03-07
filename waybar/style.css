@@ -1,0 +1,105 @@
+* {
+	padding: 0px;
+	margin: 0px;
+}
+
+window#waybar {
+	font-family: "JetBrainsMonoNerdFont Propo";
+	background-color: rgba(51, 60, 67, 0.888);
+	border-radius: 12px;
+	color: #d3c6aa;
+}
+
+#workspaces {
+	background-color: #293136;
+	padding-bottom: 8px;
+}
+
+#workspaces button {
+	color: #d3c6aa;
+	font-family: "PP Neue Machina";
+	font-weight: bold;
+}
+
+#workspaces button.active {
+	color: #a7c080;
+	font-family: "PP Neue Machina";
+	font-weight: bold;
+}
+
+#window {
+	font-family: "PP Neue Machina";
+	font-style: oblique;
+}
+
+#tray {
+	background-color: #293136;
+}
+
+#clock {
+	background-color: #293136;
+	font-family: "PP Neue Machina";
+	font-weight: bold;
+	font-size: 16px;
+	color: #dbbc7f;
+}
+
+#pulseaudio {
+	background-color: #293136;
+	color: #83c092;
+	padding-bottom: 8px;
+	font-size: 18px;
+	padding-top: 8px;
+}
+
+#battery {
+	background-color: #293136;
+	font-size: 18px;
+	padding-bottom: 8px;
+	color: #a7c080;
+}
+
+#battery.critical {
+	color: #e67e80;
+}
+
+#battery.warning {
+	color: #dbbc7f;
+}
+
+#network {
+	background-color: #293136;
+	color: #7fbbb3;
+	padding-bottom: 8px;
+	font-size: 18px;
+
+}
+
+#custom-notification {
+	background-color: #293136;
+	font-size: 16px;
+	color: #7fbbb3;
+	border-radius: 0px 0px 12px 12px;
+	padding-bottom: 8px;
+}
+
+#custom-launcher {
+	color: #7fbbb3;
+	font-size: 24px;
+	background-color: #293136;
+	border-radius: 12px 12px 0px 0px;
+}
+
+#custom-separator {
+	background-color: #293136;
+}
+
+#custom-spacer {
+	font-size: 30px;
+	color: #293136;
+}
+
+#custom-spacer2 {
+	font-size: 30px;
+	color: #293136;
+}
