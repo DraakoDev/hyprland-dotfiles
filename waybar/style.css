@@ -5,7 +5,7 @@
 
 window#waybar {
 	font-family: "JetBrainsMonoNerdFont Propo";
-	background-color: rgba(51, 60, 67, 0.888);
+	background-color: rgba(51, 60, 67, 0.6);
 	border-radius: 12px;
 	color: #d3c6aa;
 }
@@ -40,7 +40,7 @@ window#waybar {
 	background-color: #293136;
 	font-family: "PP Neue Machina";
 	font-weight: bold;
-	font-size: 16px;
+	font-size: 17px;
 	color: #dbbc7f;
 }
 
