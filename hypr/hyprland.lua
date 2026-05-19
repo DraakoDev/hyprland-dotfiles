@@ -16,22 +16,14 @@ hl.on("hyprland.start", function()
     hl.exec_cmd("waybar")
 end)
 
-
-hl.config({
-    dwindle = {
-        preserve_split = true, -- You probably want this
-    },
-})
-
-hl.config({
-    master = {
-        new_status = "master",
-    },
-})
-
 hl.config({
     scrolling = {
         fullscreen_on_one_column = true,
+        column_width = 0.5,
+        focus_fit_method = 1,
+        follow_focus = true,
+        direction = "left",
+        explicit_column_widths = "0.5, 0.8, 1"
     },
 })
 
