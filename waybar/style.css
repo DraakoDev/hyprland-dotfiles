@@ -88,6 +88,7 @@ window#waybar {
 	font-size: 24px;
 	background-color: #293136;
 	border-radius: 12px 12px 0px 0px;
+	padding-top: 4px;
 }
 
 #custom-separator {
@@ -102,4 +103,12 @@ window#waybar {
 #custom-spacer2 {
 	font-size: 30px;
 	color: #293136;
+}
+
+#language {
+	background-color: #293135;
+	font-family: "PP Neue Machina";
+	font-weight: bold;
+	color: #dbbc7f;
+	padding: 4px 0px 8px 0px;
 }

@@ -1,7 +1,8 @@
 // -*- mode: jsonc -*-
 {
     "position": "right",
-    //"output": "eDP-1",
+    "layer": "top",
+    "output": "eDP-1",
     "margin-top": 6,
     "margin-right": 6,
     "margin-bottom": 6,
@@ -11,6 +12,7 @@
         "custom/separator",
         "hyprland/workspaces",
         "tray",
+        "hyprland/language",
         "custom/spacer"
     ],
     "modules-center": [
@@ -32,6 +34,10 @@
         "format": "󰣇",
         "on-click": "rofi -show drun -theme ~/.config/rofi/launchers/type-2/style-1"
     },
+    "hyprland/language": {
+        "format-en": "EN",
+        "format-es": "LAT"
+    },
     "tray": {
         "icon-size": 21,
         "spacing": 10
@@ -43,7 +49,8 @@
     },
     "clock": {
         "format": "{:%I\n%M}",
-        "tooltip": false
+        "tooltip-format": "{:%Y-%m-%d}",
+        "on-click": "gnome-calendar"
     },
     "battery": {
         "states": {
