@@ -1,19 +1,23 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 
 format = """
-[ ](bg_dim)\
-$os\
-$username\
-[](fg:bg_dim bg:bg_dim)\
+[](bg_dim)\
+$os[ ](bg:bg_dim)\
+$username[ ](bg:bg_dim)\
 $directory\
 [](fg:bg_dim)\
-$all"""
+$fill\
+$all
+$character\
+"""
 right_format = """
 $time
 """
-add_newline = true
-
 palette = 'everforest_soft'
+
+[character]
+success_symbol = "[](bold green)"
+error_symbol = "[](bold red)"
 
 [os]
 disabled = false
@@ -21,12 +25,12 @@ style = "fg:blue bg:bg_dim"
 
 [username]
 format = "[$user]($style)"
-style_user = "fg:green bg:bg_dim"
+style_user = "bold italic fg:green bg:bg_dim"
 show_always = true
 disabled = false
 
 [directory]
-format = "[$path]($style)[$read_only]($read_only_style)"
+format = "[$read_only ]($read_only_style)[$path]($style)"
 style = "fg:blue bg:bg_dim"
 read_only_style = "fg:red bg:bg_dim"
 read_only = " 󰌾"
@@ -40,7 +44,6 @@ style = "italic dimmed white"
 
 [fill]
 symbol = " "
-style = "bg:bg_dim"
 
 [aws]
 symbol = " "
