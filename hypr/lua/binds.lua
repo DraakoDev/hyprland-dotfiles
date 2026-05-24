@@ -19,16 +19,16 @@ hl.bind(mainMod .. " + V", hl.dsp.window.float({ action = "toggle" }))
 hl.bind("Print", hl.dsp.exec_cmd("~/.config/scripts/screenshot.sh"))
 
 -- Move focus with mainMod + arrow keys
-hl.bind(mainMod .. " + left", hl.dsp.focus({ direction = "left" }))
-hl.bind(mainMod .. " + right", hl.dsp.focus({ direction = "right" }))
-hl.bind(mainMod .. " + up", hl.dsp.focus({ direction = "up" }))
-hl.bind(mainMod .. " + down", hl.dsp.focus({ direction = "down" }))
+hl.bind(mainMod .. " + H", hl.dsp.focus({ direction = "left" }))
+hl.bind(mainMod .. " + L", hl.dsp.focus({ direction = "right" }))
+hl.bind(mainMod .. " + K", hl.dsp.focus({ direction = "up" }))
+hl.bind(mainMod .. " + J", hl.dsp.focus({ direction = "down" }))
 
 -- Binds for scrolling layout
 hl.bind(mainMod .. " + P", hl.dsp.layout("colresize +conf"))
 hl.bind(mainMod .. " + SHIFT + P", hl.dsp.layout("promote"))
-hl.bind(mainMod .. "+ SHIFT + left", hl.dsp.layout("swapcol r"))
-hl.bind(mainMod .. "+ SHIFT + right", hl.dsp.layout("swapcol l"))
+hl.bind(mainMod .. "+ SHIFT + H", hl.dsp.layout("swapcol r"))
+hl.bind(mainMod .. "+ SHIFT + L", hl.dsp.layout("swapcol l"))
 
 -- Switch workspaces with mainMod + [0-9]
 -- Move active window to a workspace with mainMod + SHIFT + [0-9]
@@ -42,8 +42,8 @@ end
 hl.bind(mainMod .. " + S", hl.dsp.workspace.toggle_special("magic"))
 hl.bind(mainMod .. " + SHIFT + S", hl.dsp.window.move({ workspace = "special:magic" }))
 
-hl.bind(mainMod .. " + CTRL + right", hl.dsp.focus({ workspace = "e+1" }))
-hl.bind(mainMod .. " + CTRL + left", hl.dsp.focus({ workspace = "e-1" }))
+hl.bind(mainMod .. " + CTRL + L", hl.dsp.focus({ workspace = "e+1" }))
+hl.bind(mainMod .. " + CTRL + H", hl.dsp.focus({ workspace = "e-1" }))
 
 -- Move/resize windows with mainMod + LMB/RMB and dragging
 hl.bind(mainMod .. " + mouse:272", hl.dsp.window.drag(), { mouse = true })
