@@ -6,7 +6,6 @@
 window#waybar {
   font-family: "JetBrainsMonoNerdFont Propo";
   background-color: rgba(51, 60, 67, 0.6);
-  border-radius: 12px;
   color: #d3c6aa;
 }
 
@@ -85,7 +84,6 @@ window#waybar {
   background-color: #293136;
   font-size: 16px;
   color: #7fbbb3;
-  border-radius: 0px 0px 12px 12px;
   padding-bottom: 8px;
 }
 
@@ -93,7 +91,6 @@ window#waybar {
   color: #7fbbb3;
   font-size: 24px;
   background-color: #293136;
-  border-radius: 12px 12px 0px 0px;
   padding-top: 4px;
 }
 

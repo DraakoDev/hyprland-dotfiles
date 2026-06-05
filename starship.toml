@@ -18,6 +18,7 @@ $cpp\
 $python\
 $cmake\
 $nodejs\
+$bun\
 $lua\
 $cmd_duration\
 $time[ ]()
@@ -79,8 +80,8 @@ symbol = " "
 [java]
 symbol = " "
 
-[kotlin]
-symbol = " "
+[bun]
+symbol = " "
 
 [lua]
 symbol = " "

@@ -2,7 +2,7 @@
 {
   "position": "right",
   "layer": "top",
-  "output": "eDP-1",
+  "output": ["HDMI-A-1", "eDP-1"],
   "margin-top": 6,
   "margin-right": 6,
   "margin-bottom": 6,
