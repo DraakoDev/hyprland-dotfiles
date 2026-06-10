@@ -22,7 +22,7 @@ hl.config({
         column_width = 0.5,
         focus_fit_method = 1,
         follow_focus = true,
-        direction = "left",
+        direction = "up",
         explicit_column_widths = "0.5, 0.8, 1"
     },
 })
